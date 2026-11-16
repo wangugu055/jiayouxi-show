@@ -719,7 +719,7 @@ html.wx .grain{display:none!important}                 /* 噪点：SVG feTurbule
 html.wx #spot{display:none!important}                   /* 聚光：screen 混合 */
 html.wx .bgb{filter:none!important;transform:none!important}  /* 52px 全屏模糊 = 头号内存杀手 */
 html.wx .bgb::after{background:rgba(8,5,4,.88)!important}
-html.wx .cone{display:none!important}                   /* 22px 模糊 + mask + screen 混合 */
+html.wx .cone{filter:blur(12px)!important}              /* 保留聚光光束，仅降低模糊半径兼顾弱机 */
 html.wx .figshadow{filter:none!important}
 html.wx .fig{filter:drop-shadow(0 8px 16px rgba(0,0,0,.6))!important}
 html.wx .chip{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
